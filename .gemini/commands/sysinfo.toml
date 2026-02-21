@@ -1,0 +1,8 @@
+description = "Retrieves software and hardware system information (Linux, macOS, Windows)."
+prompt = """
+!{python3 scripts/get_sysinfo.py || python scripts/get_sysinfo.py}
+- Gemini CLI version: !{gemini --version}
+
+Output:
+Write the above information in to README.md file in markdown format if the file does not exist, otherwise append the information to the end of the file.
+"""
